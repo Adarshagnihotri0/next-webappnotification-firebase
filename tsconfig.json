@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    // Specifies the ECMAScript target version.
+    "target": "es5",
+    // Specifies the libraries to include in the compilation.
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // Allows JavaScript files to be compiled.
+    "allowJs": true,
+    // Skip type checking of declaration files.
+    "skipLibCheck": true,
+    // Enables strict type-checking options.
+    "strict": true,
+    // Enables interoperability between CommonJS and ES Modules.
+    "esModuleInterop": true,
+    // Ensures consistent file casing across the project.
+    "forceConsistentCasingInFileNames": true,
+    // Specifies the module system to use.
+    "module": "esnext",
+    // Defines how modules are resolved.
+    "moduleResolution": "node",
+    // Allows importing of JSON modules.
+    "resolveJsonModule": true,
+    // Ensures each file is treated as a separate module.
+    "isolatedModules": true,
+    // Disables emitting output files.
+    "noEmit": true,
+    // Preserves JSX syntax for further transformation.
+    "jsx": "preserve",
+    // Base directory for resolving non-relative module names.
+    "baseUrl": ".",
+    // Aliases for module paths.
+    "paths": {
+      "@/*": ["./*"]
+    },
+    // Enables incremental compilation.
+    "incremental": true,
+    // Adds specific plugins for the project (e.g., Next.js support).
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  // Files to include in the compilation.
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  // Directories or files to exclude from the compilation.
+  "exclude": ["node_modules"]
+}
